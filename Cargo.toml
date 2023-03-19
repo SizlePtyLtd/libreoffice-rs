@@ -16,7 +16,7 @@ crate-type = ["cdylib", "rlib"]
 url = "2.2.2"
 
 [build-dependencies]
-bindgen = { version = "0.64", default-features = false, features = ["static"] }
+bindgen = { version = "0.59.0", default-features = false, features = ["static"] }
 
 
 [features]
