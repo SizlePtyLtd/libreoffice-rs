@@ -9,14 +9,14 @@ repository = "https://github.com/undeflife/libreoffice-rs"
 license = "Apache-2.0"
 
 [lib]
-crate-type = ["cdylib","rlib"]
+crate-type = ["cdylib", "rlib"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [dependencies]
 url = "2.2.2"
 
 [build-dependencies]
-bindgen = "0.64"
+bindgen = { version = "0.64", default-features = false, features = ["static"] }
 
 
 [features]
